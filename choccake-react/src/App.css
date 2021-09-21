@@ -38,10 +38,8 @@
 }
 .header {
   display: flex;
-	justify-content: flex-end;
-	background-color: var(--color3);
-	height: var(--header-height);
-	box-shadow: var(--shadow);
+	justify-content: center;
+  
 }
 
 .image {
@@ -51,4 +49,18 @@
 
 hr {
 	border: 5px dashed grey;
+}
+
+.listuno {
+	display: grid;
+	justify-content: flex-start;
+	align-items: left;
+	position: static;
+	margin-left: 39px;
+}
+
+.paragraphe {
+	width: 951px;
+	justify-content: center;
+	align-items: center;
 }
