@@ -21,7 +21,7 @@ export default class App extends React.Component {
             <IngredientsList 
               measure = {ingredient.amount}
               state = {ingredient.utensils}
-              item = {ingredient.items}
+              items = {ingredient.items}
             />)
         }
         <Footer />

@@ -5,7 +5,7 @@ export default class Ingredients extends Component {
     return (
       <ol className = "listuno">
         <ul>
-          {this.props.measure} {this.props.state} of {this.props.items};
+          {this.props.measure} {this.props.state} of {this.props.items}
         </ul>
       </ol>
     );
