@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import IngredientItem from './IngredientItem.js';
 
-export default class Ingredients extends Component {
+export default class IngredientList extends Component {
   render() {
     return (
       <ol className = "listuno">
-        <ul>
-          {this.props.measure} {this.props.state} of {this.props.items}
-        </ul>
+        {
+          this.props.ingredients.map(ingredient =>
+            <IngredientItem 
+              measure = {ingredient.amount}
+              state = {ingredient.utensils}
+              items = {ingredient.items}
+            />)
+        }
       </ol>
     );
   }
