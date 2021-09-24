@@ -14,16 +14,9 @@ export default class App extends React.Component {
         <Header />
         <div>
           <Image />
+          <IngredientsList ingredients={ingredients}/>
           <Recipe />
         </div>
-        {
-          ingredients.map(ingredient =>
-            <IngredientsList 
-              measure = {ingredient.amount}
-              state = {ingredient.utensils}
-              items = {ingredient.items}
-            />)
-        }
         <Footer />
       </>
     );
